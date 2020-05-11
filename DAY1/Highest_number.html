@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Highest of Three Numbers</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: bisque;
+                padding: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <form name="myform" align="center">
+                <label>Number 1:  </label>
+                <input type="number" id="no1"><br><br>
+
+                <label>Number 2:  </label>
+                <input type="number" id="no2"><br><br>
+
+                <label>Number 3:  </label>
+                <input type="number" id="no3"><br><br>
+
+                <button align="center" type="button" 
+                onclick="getHighest(document.forms.myform.no1.value,
+                document.forms.myform.no2.value,document.forms.myform.no3.value)">
+                    Get Highest number</button><br><br>
+
+                <label>Highest Number:  </label>
+                <input type="text" id="h"><br><br>
+            </form>
+        </div></center>
+
+
+        <script>
+            function getHighest(a,b,c)
+            {
+                var h = Math.max(a,b,c)
+                document.getElementById("h").value= h;
+                return;
+
+            }
+        </script>
+    </body>
+</html>

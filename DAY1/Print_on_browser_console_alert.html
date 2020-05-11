@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Print Name on browser console and alert</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: bisque;
+                padding: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <div class="container">
+                <form name="myform" align="center">
+                    <button type="button" onclick="print_()">Print</button>
+                    <h1 id="name"></h1>
+                </form>
+            </div>
+        </center>
+
+
+        <script>
+            function print_()
+            {
+                var name="Phati Sawant";
+                window.alert(name);
+                document.write("<h1>" + name + "</h1>");
+                console.log(name);
+                return;
+
+            }
+        </script>
+    </body>
+</html>

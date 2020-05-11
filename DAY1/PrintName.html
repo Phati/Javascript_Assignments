@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Print names in 5 heading tags</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: bisque;
+                padding: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <form name="myform" align="center">
+                <label>Enter Your Name:  </label>
+                <input type="text" id="name"><br><br>
+
+                <button align="center" type="button" 
+                onclick="getHighest(document.forms.myform.name.value)">
+                    Print names</button><br><br>
+                <h1 id="1"></h1>
+                <h2 id="2"></h2>
+                <h3 id="3"></h3>
+                <h4 id="4"></h4>
+                <h5 id="5"></h5>
+            </form>
+        </div></center>
+
+
+        <script>
+            function getHighest(name)
+            {
+                document.getElementById("1").innerHTML= name;
+                document.getElementById("2").innerHTML= name;
+                document.getElementById("3").innerHTML= name;
+                document.getElementById("4").innerHTML= name;
+                document.getElementById("5").innerHTML= name;
+                return;
+
+            }
+        </script>
+    </body>
+</html>
