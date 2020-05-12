@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Q4</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+                
+            }
+
+        
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q.  Write your name with font size 4. On button click change it to 7</h4>
+            <form name="myform" align="center">
+
+                <button align="center" type="button" 
+                onclick="changefontsize()">
+                    Change font size</button><br><br>
+                    <p id="name" style="font-size: 4em;">Swapnil Sawant</p>
+            </form>
+        </div></center>
+
+
+        <script>
+            function changefontsize()
+            {
+                var x=document.getElementById("name");
+
+                if(x.style.fontSize==="4em")
+                x.style.fontSize="7em";
+
+                else if(x.style.fontSize==="7em")
+                x.style.fontSize="4em";
+                return;
+
+            }
+        </script>
+    </body>
+</html>

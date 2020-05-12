@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Q5</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+                
+            }
+
+
+            button{
+                padding: 10px;
+                background-color: lightsalmon;
+                border-radius: 10px;
+                border-color: maroon;
+                
+            }
+
+            button:hover{
+                background-color: forestgreen;
+            }
+
+        
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q.  On button click, display current date time in browser.</h4>
+            <form name="myform" align="center">
+
+                <button align="center" type="button" 
+                onclick="displaydate()">
+                    Show date</button><br><br>
+                    <p id="date" style="font-size: 2em;"></p>
+            </form>
+        </div></center>
+
+
+        <script>
+            function displaydate()
+            {
+                document.getElementById("date").innerHTML= Date();
+                return;
+
+            }
+        </script>
+    </body>
+</html>

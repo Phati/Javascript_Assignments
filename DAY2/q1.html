@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Q1</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q. Create an array having 10 numbers , write a function whose  job is to return max number from the array</h4>
+            <form name="myform" align="center">
+                <label>Enter comma seerated numbers as array elements:  </label><br>
+                <input type="text" id="array"><br><br>
+
+                <button align="center" type="button" 
+                onclick="getHighest()">
+                    Get Highest number</button><br><br>
+
+                <label>Highest Number:  </label>
+                <input type="text" id="h"><br><br>
+            </form>
+        </div></center>
+
+
+        <script>
+            function getHighest()
+            {
+                var array1=document.getElementById("array").value.split(",")
+                array1.sort(function(a, b){return b -a});
+                var h=array1[0];
+                document.getElementById("h").value= h;
+                return;
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Q9</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: lightsalmon;
+                border-radius: 10px;
+                border-color: maroon;
+                
+            }
+
+            button:hover{
+                background-color: forestgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q.Declare a string having an email Id and check if @ is there in the string or not</h4>
+            <form name="myform" align="center">
+                <label>Please enter an email ID</label><br><br>
+                <input type="text" id="email"><br><br>
+                <label id="msg"></label><br><br>
+                <button align="center" type="button" 
+                onclick="check()">
+                    Check Email</button><br><br>
+            </form>
+        </div></center>
+
+
+        <script> 
+            function check()
+            {
+               var email=document.getElementById("email").value;   
+               if(email.search("@")==-1)
+               {
+                   document.getElementById("msg").innerHTML="@ not found in email";
+               }
+
+               else 
+               document.getElementById("msg").innerHTML="@ found in email";
+
+
+                return;
+
+            }
+        </script>
+    </body>
+</html>

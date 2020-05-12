@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Q8</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: lightsalmon;
+                border-radius: 10px;
+                border-color: maroon;
+                
+            }
+
+            button:hover{
+                background-color: forestgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q.Create an array having 5 names and display it in descending order</h4>
+            <form name="myform" align="center">
+                <label>Array before sorting is:</label><br>
+                <label id="array"></label><br><br>
+                <label>Array After sorting is:</label><br>
+                <label id="sarray"></label><br><br>
+                <button align="center" type="button" 
+                onclick="sort()">
+                    Sort and Display</button><br><br>
+            </form>
+        </div></center>
+
+
+        <script>
+
+
+            var array=["JavaScript","Python","JAVA","SQL","PHP"]; 
+            document.getElementById("array").innerHTML=array.toString();   
+
+            function sort()
+            {
+                array.sort();
+                document.getElementById("sarray").innerHTML=array.toString();   
+
+                return;
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Q3</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+
+        
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q. Write your name on page but keep it hidden. On button click it should unhide your name</h4>
+            <form name="myform" align="center">
+
+                <button align="center" type="button" 
+                onclick="show()">
+                    Show Hidden name</button><br><br>
+                    <h1 id="showname" style="display: none;">Swapnil Sawant</h1>
+            </form>
+        </div></center>
+
+
+        <script>
+            function show()
+            {
+                var x=document.getElementById("showname");
+                if(x.style.display==="none")
+                {
+                    x.style.display="block";
+                }
+                return;
+
+            }
+        </script>
+    </body>
+</html>

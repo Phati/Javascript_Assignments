@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Q10</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: lightsalmon;
+                border-radius: 10px;
+                border-color: maroon;
+                
+            }
+
+            button:hover{
+                background-color: forestgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q. Declare a string having a 10 digit mobile number. Wwrite a function whose  job is to check if it has 10 digits or not</h4>
+            <form name="myform" align="center">
+                <label>Please enter a mobile number</label><br><br>
+                <input type="text" id="mob"><br><br>
+                <label id="msg"></label><br><br>
+                <button align="center" type="button" 
+                onclick="check()">
+                    Check mobile number</button><br><br>
+            </form>
+        </div></center>
+
+
+        <script> 
+            function check()
+            {
+               var mobile=document.getElementById("mob").value;   
+               if(mobile.length == 10)
+               {
+                   document.getElementById("msg").innerHTML= "Yes a mobile number";
+               }
+
+               else 
+               document.getElementById("msg").innerHTML="Not a mobile number";
+
+
+                return;
+
+            }
+        </script>
+    </body>
+</html>

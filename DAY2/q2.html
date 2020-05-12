@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Q2</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q. On button click print your name in P tag</h4>
+            <form name="myform" align="center">
+                <label>Please enter your name:  </label><br>
+                <input type="text" id="name"><br><br>
+
+                <button align="center" type="button" 
+                onclick="printname()">
+                    Print name in paragraph tag</button><br><br>
+
+                <p id="ptag"></p>
+            </form>
+        </div></center>
+
+
+        <script>
+            function printname()
+            {
+                var name=document.getElementById("name").value;
+                document.getElementById("ptag").innerHTML=name;
+                return;
+
+            }
+        </script>
+    </body>
+</html>

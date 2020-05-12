@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Q11</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: lightsalmon;
+                border-radius: 10px;
+                border-color: maroon;
+                
+            }
+
+            button:hover{
+                background-color: forestgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q. Write a function whose  job is to return a random number</h4>
+            <form name="myform" align="center">
+                <label>Enter Minimum number (included)</label><br><br>
+                <input type="number" id="min"><br><br>
+                <label>Enter Maximum number (excluded)</label><br><br>
+                <input type="number" id="max"><br><br>
+                <button align="center" type="button" 
+                onclick="getrandom()">
+                    Get a random number</button><br><br>
+                <label id="rand" style="font-size: 2em;"></label>
+            </form>
+        </div></center>
+
+
+        <script> 
+            function getrandom()
+            {
+                min=document.getElementById("min").value;
+                max=document.getElementById("max").value;
+                var rand=document.getElementById("rand");
+                rand.innerHTML=Math.floor( Math.random() * (max - min)  + min);
+                return;
+            }
+        </script>
+    </body>
+</html>

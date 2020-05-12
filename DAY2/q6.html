@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Q6</title>
+        <style>
+            .container{
+                width:500px;
+                position: center;
+                margin-top:50px;
+                background-color: lightgrey;
+                padding: 50px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: lightsalmon;
+                border-radius: 10px;
+                border-color: maroon;
+                
+            }
+
+            button:hover{
+                background-color: forestgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><div class="container">
+            <h4>Q.Create two text boxes and a button , on button click it should copy data from one text box to another</h4>
+            <form name="myform" align="center">
+                <label>Enter Name:  </label><br>
+                <input type="text" id="name"><br><br>
+
+                <label>Copied Name:  </label><br>
+                <input type="text" id="copy"><br><br>
+
+                <button align="center" type="button" 
+                onclick="copyname()">
+                    Copy Name</button><br><br>
+            </form>
+        </div></center>
+
+
+        <script>
+            function copyname()
+            {
+                var name=document.getElementById("name").value;
+                document.getElementById("copy").value=name;
+                return;
+
+            }
+        </script>
+    </body>
+</html>
